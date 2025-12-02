@@ -6,7 +6,7 @@ Struttura di una tabella per la gestione delle auto usate messe in vendita da un
 
 Colonne:
 
-- id_auto INT **PRIMARY KEY**, NOT NULL
+- id_auto INT **PRIMARY KEY**, AUTO_INCREMENT, NOT NULL
 - marca VARCHAR(50) NOT NULL
 - modello VARCHAR(50) NOT NULL
 - anno_immatricolazione YEAR NOT NULL
@@ -22,7 +22,7 @@ Colonne:
 
 | Colonna               | Tipo          | Vincoli               |
 | --------------------- | ------------- | --------------------- |
-| id_auto               | INT           | PRIMARY KEY, NOT NULL |
+| id_auto               | INT           | PRIMARY KEY, NOT NULL,  AUTO_INCREMENT|
 | marca                 | VARCHAR(50)   | NOT NULL              |
 | modello               | VARCHAR(50)   | NOT NULL              |
 | anno_immatricolazione | YEAR          | NOT NULL              |
