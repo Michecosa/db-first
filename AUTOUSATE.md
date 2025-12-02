@@ -6,14 +6,14 @@ Struttura di una tabella per la gestione delle auto usate messe in vendita da un
 
 Colonne:
 
-- id_auto INT
-- marca VARCHAR(50)
-- modello VARCHAR(50)
-- anno_immatricolazione YEAR
-- chilometraggio INT
-- alimentazione VARCHAR(20)
-- cambio VARCHAR(20)
-- prezzo DECIMAL(10,2)
-- colore VARCHAR(30)
-- targa CHAR(7)
-- note TEXT
+- id_auto INT **PRIMARY KEY**, NOT NULL
+- marca VARCHAR(50) NOT NULL
+- modello VARCHAR(50) NOT NULL
+- anno_immatricolazione YEAR NOT NULL
+- chilometraggio INT NOT NULL
+- alimentazione VARCHAR(20) NOT NULL
+- cambio VARCHAR(20) NOT NULL
+- prezzo DECIMAL(10,2) NOT NULL
+- colore VARCHAR(30) NULL
+- targa CHAR(7) NOT NULL UNIQUE
+- note TEXT NULL
