@@ -24,16 +24,20 @@ Colonne:
 
 ## Tabella: AUTO USATE
 
-| Colonna                     | Tipo          | Vincoli                               |
-| --------------------------- | ------------- | ------------------------------------- |
-| **_id_auto_**               | INT           | PRIMARY KEY, NOT NULL, AUTO_INCREMENT |
-| **_marca_**                 | VARCHAR(50)   | NOT NULL                              |
-| **_modello_**               | VARCHAR(50)   | NOT NULL                              |
-| **_anno_immatricolazione_** | YEAR          | NOT NULL                              |
-| **_chilometraggio_**        | INT           | NOT NULL                              |
-| **_alimentazione_**         | VARCHAR(20)   | NOT NULL                              |
-| **_cambio_**                | VARCHAR(20)   | NOT NULL                              |
-| **_prezzo_**                | DECIMAL(10,2) | NOT NULL                              |
-| **_colore_**                | VARCHAR(30)   | NULL                                  |
-| **_targa_**                 | CHAR(7)       | NOT NULL, UNIQUE                      |
-| **_note_**                  | TEXT          | NULL                                  |
+| Colonna                       | Tipo          | Vincoli                               |
+| ----------------------------- | ------------- | ------------------------------------- |
+| **_id_auto_**                 | INT           | PRIMARY KEY, NOT NULL, AUTO_INCREMENT |
+| **_marca_**                   | VARCHAR(50)   | NOT NULL                              |
+| **_modello_**                 | VARCHAR(50)   | NOT NULL                              |
+| **_*anno_immatricolazione*_** | YEAR          | NOT NULL                              |
+| **_chilometraggio_**          | INT           | NOT NULL                              |
+| **_alimentazione_**           | VARCHAR(20)   | NOT NULL                              |
+| **_cambio_**                  | VARCHAR(20)   | NOT NULL                              |
+| **_prezzo_**                  | DECIMAL(10,2) | NOT NULL                              |
+| **_colore_**                  | VARCHAR(30)   | NULL                                  |
+| **_targa_**                   | CHAR(7)       | NOT NULL, UNIQUE                      |
+| **_stato_auto_**              | VARCHAR(20)   | NOT NULL DEFAULT('Disponibile')       |
+| **_data_arrivo_**             | DATE          | NOT NULL DEFAULT(now())               |
+| **_cilindrata_**              | SMALLINT      | NOT NULL                              |
+| **_potenza_**                 | SMALLINT      | NOT NULL                              |
+| **_note_**                    | TEXT          | NULL                                  |
